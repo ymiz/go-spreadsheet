@@ -24,7 +24,7 @@ func main() {
 		log.Fatalf("Unable to retrieve Sheets client: %v", err)
 	}
 
-	// Prints the names and majors of students in a sample spreadsheet:
+	// Prints the names and majors of students in a sample spreadsheet
 	spreadsheetId := ""
 	readRange := "sheet1!A:A"
 	resp, err := srv.Spreadsheets.Values.Get(spreadsheetId, readRange).Do()
